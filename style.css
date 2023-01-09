@@ -1,0 +1,437 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+.menu-bar{
+    background: gray;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.menu-bar ul li{
+    width: 130px;
+    margin: 15px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.menu-bar ul li:hover{
+    background-color: blanchedalmond;
+    border-radius: 2px;
+}
+.menu-bar ul h1{
+    width: 200px;
+    margin: 15px;
+    margin-right: 50px;
+    padding: 5px;
+    padding-left: 20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.sub-menu{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: gray;
+    margin: 13px;
+    z-index: 1;
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background-color: transparent;
+    border-radius: 1px;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu ul li:hover{
+    background-color: bisque;
+    color: aqua;
+}
+
+.sub-menu-1{
+    display: none;
+}
+.hover-me:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color:gray;
+    margin-left: 144px;
+    margin-top: -33px;
+}
+
+.slider{
+    
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+.slideBar{
+    margin-top: 2px;
+    transition: 2s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 3px gray;
+}
+.slideBar img{
+    width: 100%;
+    height: 100%;
+}
+.slideBar div{
+    width: 20%;
+    height: auto;
+    position: relative;
+    left: 42%;
+    bottom: 25%;
+    padding: 20px;
+    text-align: center;
+    
+}
+.slideBar a{
+    text-decoration: none;
+    color: black;
+}
+.slideBar div h2,hr{
+    margin-bottom: 10px;
+}
+.slideBar div button{
+    padding: 8px 30px;
+    border-radius: 20%;
+    font-weight: bold;
+    
+}
+
+.section1{
+    display: flex;
+    padding: 50px 20px 50px 20px;
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    
+}
+.section1 div{
+    width: 50%;
+    height: 100%;
+    
+}
+.section1 .slideBar2{
+    padding-bottom: 50px;
+    width: 45%;
+    margin: 5px;
+    border-radius: 10px 0px 0px 0px;
+    background-image: url(5.jpg);
+    background-size: cover;
+    animation: imageslide 40s linear 5s infinite normal forwards;
+}
+
+@keyframes imageslide {
+    0%{
+        background-image: url(5.jpg);
+    }
+    25%{
+        background-image: url(6.jpg);
+    }
+    50%{
+        background-image: url(7.jpg);
+    }
+    75%{
+        background-image: url(8.jpg);
+    }
+    100%{
+        background-image: url(5.jpg);
+    }
+    
+}
+.section1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.section1 .about{
+    /* margin: 5px; */
+    width: 55%;
+    text-align: center;
+}
+.section1 .about h1{
+    padding: 20px 0px 15px 0px;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.section1 .about p{
+    padding: 15px;
+}
+.section2{
+    width: 100%;
+    height:auto;
+    margin: auto;
+    text-align: center;
+    margin-top:15px ;
+    padding-bottom: 20px;
+}
+.section2 h1{
+    padding: 20px 0px 15px 0px;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.section2 hr{
+    margin: auto;
+    width: 100%;
+    margin-bottom: 25px;
+    
+}
+
+.grid-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    column-gap: 20px;
+    padding: 50px;
+    padding-bottom:0px ;
+    
+}
+.grid-item{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    text-align: left;
+    border-radius: 5px;
+    height: auto;
+    width: 23%;
+}
+.grid-item .grid-child-item{
+    width: 100%;
+    height: auto;
+}
+.grid-item .grid-child-item a{
+    color: black;
+    text-decoration: none;
+}
+.grid-item .img{
+    width: 100%;
+    height: auto;
+}
+.grid-item img{
+    width: 100%;
+    height: 100%;
+}
+.grid-item h3{
+    width: 95%;
+    margin-left: 5%;
+    padding:10px;
+    text-align: left;
+}
+.grid-item p{
+    width: 95%;
+    margin-left: 5%;
+    padding:10px;
+    padding-top: 0px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.grid-item hr{
+    width: 95%;
+    background-color: red;
+}
+.grid-item button{
+    margin-left: 10%;
+    margin-bottom: 10%;
+    padding:5px 15px;
+    background-color:white;
+    border-radius: 10%;
+    font-weight: bold;
+    
+}
+.grid-item button:nth-child(1){
+    margin-left: 1%;
+    margin-bottom: 10%;
+    padding:5px 15px;
+    background-color:white;
+    border-radius: 10%;
+    font-weight: bold;
+    
+}
+
+
+.section3{
+    /* display: flex; */
+    width: 99%;
+    margin: auto;
+    height: auto;
+    margin-top: 70px;
+    background-color: black;
+    color: white;
+}
+
+.contact-form{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+}
+.section3 h1{
+    padding: 20px;
+    padding-top: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.contact-form div{
+    height: auto;
+    margin: 30px;
+    margin-bottom: 80px;
+
+}
+
+.section3 hr{
+    width: 96%;
+    margin: auto;
+}
+
+.contact-item1{
+    width: 40%;
+    padding: 30px;
+}
+.contact-item1 li{
+    list-style-type: none;
+    padding: 15px;
+    font-weight: bold;
+}
+.contact-item2{
+    width: 60%;
+    font-weight: bold;
+}
+.contact-item2 input{
+    padding: 10px;
+    margin-bottom: 12px;
+    width: 92%;
+    border: none;
+}
+
+.contact-item2 input:nth-child(1){
+    width: 45%;
+    margin-right: 10px;
+}
+.contact-item2 input:nth-child(2){
+    width: 45%;
+}
+.contact-item2 button{
+    padding: 10px 50px 10px 50px;
+}
+
+.section4{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+.section4 h1{
+    margin: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.section4 hr{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.slider3{
+    margin: auto;
+    width: 60%;
+    height: 400px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px gray;
+}
+.slider3-item{
+    transition: 2s;
+    position: absolute;
+    width: 100%;
+    height: 88%;
+
+}
+.slider3-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.slider3-item h5{
+    margin: auto;
+    width: 60%;
+    text-align: right;
+}
+.slider3-item p{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 150px;
+    padding: 50px;
+}
+footer h2{
+    margin: 10px;
+}
+footer span{
+    color: gray;
+    font-size: 20px;
+    
+}
+footer span .fa{
+    margin-left: 3px;
+    font-size: 20px;
+}
+footer span a{
+    color: white;
+    text-decoration: none;
+}
+.contact-item1 .fa{
+    margin-right:15px;
+    font-size: 20px;
+    float: left;
+}
+.menu-bar .fa{
+    font-size: 18px;
+    float: left;
+    margin-right: 5px;
+}
+.menu-bar .sub-menu .hover-me .fa{
+    font-size: 25px;
+    float: right;
+    padding-top: 7px;
+}
+/* html page css start */
+

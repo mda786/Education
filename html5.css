@@ -1,0 +1,98 @@
+
+.section-html-1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    position: absolute;
+}
+.section-html-1 .html-menu{
+    background-color:black;
+    width: 20%;
+    padding: 10px;
+    height: 88%;
+    color: white;
+    position: fixed;
+    overflow: scroll;
+    top: 12%;
+}
+.section-html-1 .html-content{
+    position: relative;
+    top: 12%;
+    width: 80%;
+    left: 20%;
+}
+.html-content-section{
+    width: 100%;
+    
+    padding: 50px;
+}
+.html-content footer{
+    position:relative;
+    bottom: 0;
+    height: 20%;
+}
+.section-html-1 .html-content h1{
+    letter-spacing: 2px;
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 30px;
+
+}
+.section-html-1 .html-content p{
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 23px;
+
+}
+.section-html-1 hr{
+    margin: 10px;
+}
+.section-html-1 .html-content ul{
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 21px;
+}
+.section-html-1 .html-content h2{
+    padding: 5px;
+    padding-left: 0px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.section-html-1 .html-content ul li{
+    padding: 5px;
+    
+}
+.section-html-1 .html-menu h1{
+    padding: 10px;
+    border-bottom:2px solid gray ;
+    width: 100%;
+
+}
+.section-html-1 .html-menu li{
+    padding: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    border-bottom:1px solid gray ;
+    width: 90%;
+}
+.section-html-1 .html-menu li:hover{
+    background-color: white;
+    color: black;
+}
+.section-html-1 .html-menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.section-html-1 .html-menu li a:hover{
+    color: black;
+}
+.html5-menu-bar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 12%;
+    overflow: hidden;
+}
+
